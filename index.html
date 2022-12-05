@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4569e946ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Converter App</h1>
+    <h2>Input a number you want to convert!</h2>
+    <article class="content">
+      <div class="converter">
+        <form class="form" action="POST">
+          <h3 id="converter--name">Temperature Converter</h3>
+          <div id="temperature--converter">
+            <div class="first__section">
+              <select name="temp--select1" id="temp--select1">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option></select
+                ><input
+                id="box--1"
+                type="number"
+                value="0"
+                maxlength="6"
+                required
+                autofocus
+              />
+            </div>
+            <div class="second__section">
+              <select name="temp--select2" id="temp--select2">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option></select
+                ><input id="box--2" type="number" value="32" required />
+              </div>
+            </div>
+          <div id="mass--converter">
+            <div class="first__section">
+              <select name="mass--select1" id="mass--select1">
+                <option value="kilogram">Kilogram (kg)</option>
+                <option value="gram">Gram (g)</option>
+                <option value="pound">Pound (lb)</option>
+                <option value="ounce">Ounce (oz)</option></select
+              ><input id="box--3" type="number" value="1" required />
+            </div>
+            <div class="second__section">
+              <select name="mass--select2" id="mass--select2">
+                <option value="gram">Gram (g)</option>
+                <option value="kilogram">Kilogram (kg)</option>
+                <option value="pound">Pound (lb)</option>
+                <option value="ounce">Ounce (oz)</option>
+              </select>
+              <input id="box--4" type="number" value="1000" required />
+            </div>
+          </div>
+          <div id="length--converter">
+            <div class="first__section">
+              <select name="length--select1" id="length--select1">
+                <option value="meters">Meters</option>
+                <option value="feet">Feet</option>
+                <option value="miles">Miles</option></select
+                ><input id="box--5" type="number" value="1" required />
+              </div>
+              <div class="second__section">
+                <select name="length--select2" id="length--select2">
+                  <option value="feet">Feet</option>
+                  <option value="meters">Meters</option>
+                  <option value="miles">Miles</option></select
+                  ><input id="box--6" type="number" value="3.281" required />
+                </div>
+              </div>
+              <div title="Scroll Indicator" class="control--slide">
+                <span class="slide"></span>
+                <span class="slide"></span>
+                <span class="slide"></span>
+              </div>
+              <div class="control--buttons">
+            <span id="prev"class="fa-solid fa-circle-left"></span>
+            <span id="next"class="fa-solid fa-circle-right"></span>
+          </div>
+        </form>
+      </div>
+    </article>
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
